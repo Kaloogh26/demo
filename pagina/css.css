@@ -1,0 +1,281 @@
+* {
+box-sizing: border-box; 
+}
+body {
+    background-image: url(imagenes/1327530.jpeg);
+    background-repeat: repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+}
+p {
+    font-family: verdana;
+    font-size: 18px;
+    text-decoration: none;
+}
+pre {
+    font-size: 1vw;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 2.5vw;
+    border: 3px solid red;
+}
+b {
+    color: yellow;
+}
+
+/* Provando a estructurar la pagina */
+
+.article_imagen {
+    float: left;
+    width: 60%;
+    margin-left: 20%;
+}
+.article_home_centre { /*home-poem*/
+    float: left;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.footer_addrees {
+    flex-grow: 1;
+    float: left;
+    text-align: center;
+}
+/**/
+.article_about_right {
+    float: right;
+    width: 45%;
+    margin-right: 5%;
+    
+}
+.article_about_left {
+    float: flex;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.article_poem {
+    float: left;
+    width: 60%;
+    margin-top: -1%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.article_cita {
+    text-align: center;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+/* Ajustar el tamaño para celular*//*
+@media only screen and (max-width:300px) {
+    .article_poem, .article_poem, .centrar{
+        width: auto;
+        white-space: normal;
+        font-size: 10px;
+    }
+}
+
+.centrar {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+*/
+
+/* Menú de navegación */
+
+nav {
+    background-color: red;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ul_menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.li_menu {
+    margin: auto;
+    padding: 0;
+}
+
+.li_menu a {
+    font-weight: 700;
+    font-size: 20;
+    color: white;
+    text-decoration: none;
+    padding: 10px 45px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.li_menu a:hover {
+    border: 2px solid black;
+    background-color: white;
+    
+}
+
+
+/* Estilo poema */
+pre {
+    border:3px solid tomato; 
+    width: auto;
+    height: auto;
+    text-align: center; 
+    color: tomato;
+    background-image: url(imagenes/840_560.jpg); 
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Listas */
+dl {
+    border: 2px solid white;
+    display: inline-block;
+    margin-left: 10%;
+    width: 80%;
+}
+dt {
+    color: yellow;
+    font-size: 20px;
+    border: 2px solid white;
+    padding: 3px;
+}
+dd{
+    color: white;
+    font-size: 18px;
+}
+
+/* Para cambiar el color de los hypervinculos */
+
+    a:link {
+        color:yellow;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    a:visited {
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    a:active {
+        color: aquamarine;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+/* Tablas */
+
+    table, th, td {
+    color: white;
+    border:2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    }
+    tr,th:nth-child(even) {
+        background-color: #5c0f0f;
+    }
+    th {
+        color: yellow;
+    }
+
+/* "botones" */
+.a2, .btn {
+    background-color: transparent;
+    text-align: center;
+    border: 2px solid yellow;
+    padding: 1.1%;
+}
+.a2 {
+    float: left;
+}
+.a2:hover, .btn:hover {
+    background-color: black;
+}
+.a2:link, .btn:link {
+    background-color: black;
+}
+
+/* Juegos */
+
+img {
+    border: 2px solid white;
+}
+.article_img {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/* todas las imagenes*/
+.img1 {
+    width: 100%;
+    height: 100%;
+}
+
+.estanteria {
+    display: flex;
+    padding-bottom: 1%;
+}
+
+.estante {
+    width: 100%;
+    height: 400px;
+    margin: 5px;
+    padding: 3px;
+    border: 3px solid white;
+    background-color: black;
+}
+
+/* Imagens de about */
+.article_img2 {
+    width: 100%;
+    margin: auto;
+}
+
+
+/* Titulo de poema */
+.img_poem {
+    float: left;
+    width: 5.9%;
+    border: transparent;
+}
+.img_text {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.p_autor {
+    font-size: 16px;
+    color: yellow;
+    text-decoration: underline;
+    text-align: right;
+    padding: 0.5%;
+}
+q {
+    color: white;
+}
+.article_autor {
+    width: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
